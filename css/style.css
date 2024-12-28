@@ -1,0 +1,124 @@
+:root {
+    --color-primary: #22c55e;
+    --color-primary-hover: #16a34a;
+    --color-bg: #111827;
+    --color-bg-secondary: #1f2937;
+    --color-text: #ffffff;
+    --color-text-secondary: #9ca3af;
+    --color-border: #374151;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+main{
+    background-image: url('https://cdn.apexminecrafthosting.com/assets/images/backgrounds/ryzen-bg.webp');
+    background-size: cover;
+    height: auto;
+    text-align: center;
+}
+
+h1{
+    
+    font-family: verdana;
+    font-size: 60px;
+}
+h1 p{
+    color: #16a34a;
+}
+
+.sub-h1{
+    color: #9ca3af;
+}
+main button{
+    background: #22c55e;
+    color: #fff;
+    border: 2px solid var(--color-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    font-size: large;
+    
+}
+main button:hover{
+    background: transparent;
+}
+.logo-identity{
+    color: #fff;
+    font-weight: 750;
+}
+.heading{
+    font-weight: 600;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 0.4rem;
+}
+.plans{
+    border-radius: 0.9rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    padding: 0.9rem;
+    transition-duration: 0.3s;
+}
+.plans .plan-heading{
+    font-weight: 600;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.plans:hover{
+    border-color: #16a34a;
+}
+.plans {
+    float: left;
+    width: 49.6%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row{
+    padding-inline: 0.4rem;
+    border-spacing: 0.9rem;
+    
+  }
+  #plan1{
+    float: right;
+  }
+
+
+@media screen and (max-width: 480px) {
+    main{
+        background-image: url('https://cdn.apexminecrafthosting.com/assets/images/header-bg-mobile.webp');
+        
+    }
+    h1{
+        font-size: 50px;
+    }
+    .plans{
+        width: 100%;
+    }
+}
